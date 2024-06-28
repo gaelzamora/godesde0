@@ -11,9 +11,10 @@ import (
 var num int
 var err error
 
-func Mult() {
+func Mult() (string) {
 	scanner := bufio.NewScanner(os.Stdin)
 	
+	var texto string
 	for {
 		println("Ingrese un numero: ")
 		if scanner.Scan() {
@@ -25,6 +26,8 @@ func Mult() {
 	}
 
 	for i:=1; i<=10; i++ {
-		fmt.Printf("%d x %d = %d\n", num, i, i*num)
+		texto += fmt.Sprintf("%d x %d = %d\n", num, i, i*num)
 	}
+
+	return texto
 }

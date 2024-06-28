@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gaelzamora/godesde0/ejercicios"
+	"github.com/gaelzamora/godesde0/users"
 )
 
 func main() {
@@ -13,6 +13,16 @@ func main() {
 /*	teclado.IngresoNumero()*/
 	/*iteraciones.Iterar()*/
 
-	ejercicios.Mult()
-	
+//	fmt.Println(ejercicios.Mult())
+
+	//files.GrabaTabla()
+	//files.LeoArchivo()
+	//funciones.Calculos()	
+	//funciones.LlamarClosure()
+	//funciones.Exponencia(2)
+	//arreglos_slices.MuestroArreglos()
+	//arreglos_slices.Capacidad()
+	//mapas.MostrarMapas()
+	users.AltaUsuario()
+
 }
